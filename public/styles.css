@@ -1,0 +1,99 @@
+body {
+  font-family: Rubik, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+h1, h2, h3 {
+  color: #333;
+  margin: 0;
+}
+.btn {
+  background: #ffa300;
+  color: white;
+  padding: 10px;
+  border: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+header {
+  background: #e4e4e4;
+  padding: 20px;
+}
+header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header img {
+  width: 60px;
+}
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+.article-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.article {
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+footer {
+  background: #eee;
+  padding: 60px 0;
+}
+footer h2 {
+  text-align: center;
+}
+form * {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+form textarea {
+  height: 100px;
+}
+.btn {
+  background: #ffa300;
+  color: white;
+  padding: 10px;
+  border: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.loader {
+  opacity: 0;
+  position: fixed;
+  width: 100px;
+  text-align: center;
+  top: 50%;
+  left: calc(50% - 100px);
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.loader.htmx-request {
+  opacity: 1;
+}
