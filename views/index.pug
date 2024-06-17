@@ -7,4 +7,7 @@ block content
       include partials/list
   footer
     h2 Add a New Article
-    //- form here later
+    form(action="/articles" method="post" hx-target=".article-list")
+      input(type="text" name="name" placeholder="Article Name" required)
+      textarea(name="body" placeholder="Article Body" required)
+      button.btn(type="submit") Add Article
