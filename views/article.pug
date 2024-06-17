@@ -1,0 +1,11 @@
+extends layouts/layout
+
+block content
+  main
+    h2 #{article.name}
+    p #{article.body}
+    a(
+      hx-get="/"
+      hx-target="body"
+      hx-push-url="true" 
+    ) Back to all Articles

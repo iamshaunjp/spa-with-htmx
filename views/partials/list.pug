@@ -2,4 +2,8 @@ each article in articles
   div.article
     h3 #{article.name}
     p #{article.body.slice(0, 100)}...
-    a.btn View Details
+    a.btn(
+      hx-get=`/article/${article.id}`
+      hx-target="body"
+      hx-push-url="true"
+    ) View Details
