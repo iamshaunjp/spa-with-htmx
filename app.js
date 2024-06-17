@@ -1,5 +1,5 @@
 import express from 'express';
-import routes from './routes/index.js';
+import router from './routes/index.js';
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'pug');
 
 // routes
-app.use('/', routes);
+app.use('/', router);
 
 // listen to port
 app.listen(3000, () => {
