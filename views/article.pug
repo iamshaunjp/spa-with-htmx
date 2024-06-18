@@ -1,10 +1,9 @@
 extends layouts/layout
 
 block content
-  main
+  main(hx-history-elt)
     h2 #{article.name}
     p #{article.body}
     a(
       href='/'
-      hx-boost="true"
     ) Back to all Articles
